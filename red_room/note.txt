@@ -1,4 +1,2 @@
-A photo and ciphertext was left behind by a victim of the Red Room
-Can you recover their last message?
-
-
+A victim falls into the red room for attempting to steal the treasure,
+all that is left is a photo and a program, can YOU steal the treasure?
