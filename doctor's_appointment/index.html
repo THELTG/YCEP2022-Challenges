@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .body-margin {
+                margin-top: 4em;
+            }
+
+            #background {
+                background-color:darkgray;
+            }
+
+        </style>
+
+    </head>
+
+    <body class="text-center body-margin container" id="background">
+        <form class="form-inline">
+            <label for="username">Username:</label>
+            <br>
+            <input class="form-control form-control-lg" type="text" id="username" name="username" placeholder="hAck3rMan">
+            <br>
+            <br>
+            <label for="password">Password:</label>
+            <br>
+            <input class="form-control form-control-lg" type="text" id="password" name="password" placeholder="suP3r_s3cReT_pA5sW0rd">
+            <br>
+            <br>
+            <input type="button" id="submit" value="Submit"></input>
+        </form>
+        <br>
+        <code id="output">you will never inject me! NEVERR!!</code>
+        
+    </body>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script>
+        document.querySelector("#submit").addEventListener("click",function(event){
+            $.ajax({
+                    data : {
+                        username : $('#username').val(),
+                        password : $('#password').val()
+                    },
+                    type : 'GET',
+                    url : window.location.href,
+                    success:function(reply){
+                        $("#output").html(reply);
+                    }
+                })
+                .done(function(data){console.log(data)})
+        },false)
+    </script>
+
+
+</html>

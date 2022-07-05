@@ -1,0 +1,3 @@
+Change the cookie from h3alThy_rAisIn_co0kie to cH0c0lat3_cOoKiEs_aR3_bAd_f0r_yOu
+refresh the page and get the flag 
+YCEP22{i_hAt3_RaiS1n_c00k1es}

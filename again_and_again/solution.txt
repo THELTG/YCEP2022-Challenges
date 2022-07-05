@@ -1,0 +1,8 @@
+RUhxR0cwRGpGR0VTRmFTS3BhY2FNeGN1TDA5V1p3dWVGYXFXblNjWERIZ1RISFNDb3dBS0lLV1VHSUFXSElBUXBSdWFEMHhqSTF5Wlp3SUpvMGcwbjBNdXJJQVNaSkFUR0tjZUkxY0VySDFYcnlBVG93T3dBVU9XR0gxblpTQVRFUU9qbnhBUkNHMD0=
+
+Cipher > B64 > ROT13 > B64 > ROT13 > B64 > ROT13 > B64 > ROT13 > B64 > ROT13 > FLAG
+
+Users have to repetitively decode the given ciphertext (base64 decode first) 5 times 
+(Decode B64 + ROT13 is considered 1 cycle)
+
+YCEP22{wHy_d1D_i_sP3nd_s0_l0ng_oN_th15?}

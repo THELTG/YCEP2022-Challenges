@@ -1,0 +1,18 @@
+Users have to fix the decrypt() function to the XOR cipher
+YCEP22{x0R_c1ph3r_i$_1nt4r3sT1ng}
+
+This is full code for decrypting the flag:
+
+def decrypt(ciphertext,key):
+    plaintext = ""
+    ciphertext = ciphertext.split(" ")
+
+    while len(ciphertext) > len(key):
+        key += "password"
+
+    for character in range(len(ciphertext)):
+        plaintext += chr(int(ciphertext[character]) ^ ord(key[character]))
+
+    print(plaintext)
+
+decrypt(flag,"password")

@@ -1,0 +1,2 @@
+A photo and ciphertext was left behind by a victim of the Red Room
+Can you recover their last message?
