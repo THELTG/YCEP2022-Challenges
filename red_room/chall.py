@@ -28,7 +28,7 @@ try:
         # decrypt using provided messages, TOO BAD YOU DONT HAVE IT LOL
         decryption = AES.new(key=secret_passphrase1.encode(),mode=AES.MODE_CBC,iv=secret_passphrase2.encode())
         plaintext = decryption.decrypt(ciphertext).decode()
-        print(plaintext) # we indulge in a minute amount of trolling on line 31 
+        # we indulge in a minute amount of trolling on line 31 
     else:
         print("INCORRECT RESPONSE")
 except:
